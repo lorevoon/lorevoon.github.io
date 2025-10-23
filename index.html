@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Your Name — Graphics Programmer</title>
+    <meta name="description" content="Portfolio of an aspiring graphics programmer: real-time rendering, shaders, GPU, and engine work." />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Your Name — Graphics Programmer" />
+    <meta property="og:description" content="Portfolio of an aspiring graphics programmer: real-time rendering, shaders, GPU, and engine work." />
+    <meta property="og:image" content="/assets/images/og-card.svg" />
+    <meta property="og:url" content="https://lorevoon.github.io/" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+
+    <!-- Optional: webfont (safe fallback if blocked) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Your Name",
+      "jobTitle": "Graphics Programmer",
+      "url": "https://lorevoon.github.io/",
+      "sameAs": [
+        "https://github.com/lorevoon"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">Your Name</a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Graphics Programmer</h1>
+            <p class="tagline">I build real‑time rendering tech — shaders, GPU systems, and engine features.</p>
+            <div class="cta">
+              <a class="btn primary" href="#work">View Work</a>
+              <a class="btn" href="#contact">Get in Touch</a>
+            </div>
+            <!-- Replace with your actual resume link or remove -->
+            <p class="note">Tip: Replace placeholders by editing this page and assets. See README for quick steps.</p>
+          </div>
+          <div class="hero-art">
+            <img src="/assets/images/profile-placeholder.svg" alt="Profile placeholder" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Work / Projects -->
+      <section id="work" class="section">
+        <div class="container">
+          <h2>Selected Work</h2>
+          <p class="section-lead">A few small demos and experiments focused on real‑time graphics.</p>
+          <div class="grid projects">
+            <!-- Duplicate a card and update title/desc/links and thumbnail -->
+            <article class="card project">
+              <div class="thumb" style="--thumb: url('/assets/images/thumbs/pbr-spheres.svg');"></div>
+              <div class="card-body">
+                <h3>PBR Spheres</h3>
+                <p>Microfacet BRDF with image‑based lighting; roughness/metalness sweep and HDR environment.</p>
+                <div class="links">
+                  <a href="#" aria-label="Demo link">Demo</a>
+                  <a href="#" aria-label="Source code link">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="thumb" style="--thumb: url('/assets/images/thumbs/ssao.svg');"></div>
+              <div class="card-body">
+                <h3>SSAO</h3>
+                <p>Screen‑space ambient occlusion with TAA resolve and denoise pass.</p>
+                <div class="links">
+                  <a href="#">Demo</a>
+                  <a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="thumb" style="--thumb: url('/assets/images/thumbs/cloth.svg');"></div>
+              <div class="card-body">
+                <h3>GPU Cloth</h3>
+                <p>Position‑Based Dynamics on compute; constraints and wind forces.</p>
+                <div class="links">
+                  <a href="#">Demo</a>
+                  <a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="thumb" style="--thumb: url('/assets/images/thumbs/rt.svg');"></div>
+              <div class="card-body">
+                <h3>Path Tracer</h3>
+                <p>Progressive PT with MIS and BVH; sky and emissive lights.</p>
+                <div class="links">
+                  <a href="#">Demo</a>
+                  <a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="thumb" style="--thumb: url('/assets/images/thumbs/water.svg');"></div>
+              <div class="card-body">
+                <h3>Water</h3>
+                <p>FFT ocean surface with normal maps and screen‑space reflections.</p>
+                <div class="links">
+                  <a href="#">Demo</a>
+                  <a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="card project">
+              <div class="thumb" style="--thumb: url('/assets/images/thumbs/particles.svg');"></div>
+              <div class="card-body">
+                <h3>GPU Particles</h3>
+                <p>Millions of particles using compute + indirect draw.</p>
+                <div class="links">
+                  <a href="#">Demo</a>
+                  <a href="#">Code</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills">
+            <div>
+              <h3>Languages</h3>
+              <ul>
+                <li>C/C++</li>
+                <li>HLSL / GLSL / WGSL</li>
+                <li>CUDA / OpenCL</li>
+              </ul>
+            </div>
+            <div>
+              <h3>APIs & Engines</h3>
+              <ul>
+                <li>Vulkan, DirectX, OpenGL</li>
+                <li>Unreal, Unity</li>
+                <li>WebGPU, WebGL</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Topics</h3>
+              <ul>
+                <li>PBR, GI, AA/TAA</li>
+                <li>Compute, GPU culling</li>
+                <li>Profiling & tools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p>
+            I’m an aspiring graphics programmer interested in real‑time rendering and GPU systems.
+            I enjoy building shaders, experimenting with new techniques, and turning research into
+            practical, high‑performance implementations.
+          </p>
+          <p>
+            I’m currently seeking opportunities (internships or junior roles). If you think I might be a fit,
+            I’d love to chat.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <ul class="contact">
+            <li><a href="mailto:you@example.com">you@example.com</a></li>
+            <li><a href="https://github.com/lorevoon" rel="me">GitHub</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">ArtStation</a></li>
+            <li><a href="#">YouTube</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Your Name. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+  </html>
