@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GPU Particles — Your Name</title>
+    <meta name="description" content="Millions of particles simulated on the GPU with compute and indirect drawing." />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://lorevoon.github.io/projects/gpu-particles.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="GPU Particles — Your Name" />
+    <meta property="og:description" content="Millions of particles simulated on the GPU with compute and indirect drawing." />
+    <meta property="og:image" content="/assets/images/thumbs/particles.svg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">Your Name</a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="/index.html#work">Work</a></li>
+            <li><a href="/index.html#skills">Skills</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>GPU Particles</h1>
+            <p class="tagline">Compute‑driven particle simulation and rendering using indirect draw.</p>
+            <div class="cta">
+              <a class="btn" href="/index.html#work">← Back to Work</a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <img src="/assets/images/thumbs/particles.svg" alt="GPU particles thumbnail" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Overview</h2>
+          <p>
+            Particle state update executed in compute passes. Draw calls are issued via indirect buffers with
+            GPU‑generated instance counts for scalability.
+          </p>
+          <h3>Highlights</h3>
+          <ul>
+            <li>Simulation in compute with structured buffers</li>
+            <li>GPU culling and compaction</li>
+            <li>Indirect draw for large particle counts</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Your Name. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+  </html>
+

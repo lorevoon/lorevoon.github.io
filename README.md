@@ -14,12 +14,13 @@ Most content is in `index.html`. Open it and replace placeholders:
 - Hero image: replace `assets/images/profile-placeholder.svg` with your own (same path/filename) or update the `<img>` `src`.
 - Social preview card: edit `assets/images/og-card.svg` text, or export a 1200×630 PNG and update the `<meta property="og:image">` path.
 
-Projects (cards):
+Projects (cards → project pages):
 
-1) Duplicate a `<article class="card project">` block under `#work` in `index.html`.
-2) Update the title, description, and links.
-3) Set a thumbnail: create an image under `assets/images/thumbs/` and point the inline style:
-   `style="--thumb: url('/assets/images/thumbs/your-thumb.svg');"`
+1) Create a new page under `projects/` (e.g., `projects/my-project.html`). You can copy one of the existing pages as a template.
+2) In `index.html`, under `#work`, duplicate an `<a class="card project" href="/projects/your-page.html"> ... </a>` block.
+3) Update the card title/description and the `href` to your new page.
+4) Set a thumbnail: put an image in `assets/images/thumbs/` and set `style="--thumb: url('/assets/images/thumbs/your-thumb.svg');"` on the card’s `.thumb`.
+5) Optional: add the new page URL to `sitemap.xml`.
 
 Skills/About sections are plain text — just edit the lists and paragraphs.
 

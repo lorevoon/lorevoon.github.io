@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PBR Spheres — Your Name</title>
+    <meta name="description" content="Microfacet BRDF with IBL: roughness/metalness sweep, HDR environment, and punctual lights." />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://lorevoon.github.io/projects/pbr-spheres.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="PBR Spheres — Your Name" />
+    <meta property="og:description" content="Microfacet BRDF with IBL: roughness/metalness sweep, HDR environment, and punctual lights." />
+    <meta property="og:image" content="/assets/images/thumbs/pbr-spheres.svg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">Your Name</a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="/index.html#work">Work</a></li>
+            <li><a href="/index.html#skills">Skills</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>PBR Spheres</h1>
+            <p class="tagline">Microfacet BRDF with IBL: GGX, Smith masking, Fresnel (Schlick), environment prefiltering.</p>
+            <div class="cta">
+              <a class="btn" href="/index.html#work">← Back to Work</a>
+              <!-- Optional: replace with your live demo and code links -->
+              <!-- <a class="btn primary" href="#">Live Demo</a> -->
+              <!-- <a class="btn" href="#">Source Code</a> -->
+            </div>
+          </div>
+          <div class="hero-art">
+            <img src="/assets/images/thumbs/pbr-spheres.svg" alt="PBR spheres thumbnail" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Overview</h2>
+          <p>
+            A small renderer showcasing physically‑based shading on spheres with varying roughness and metalness.
+            IBL uses prefiltered environment maps and a BRDF LUT. Punctual lights are supported for specular highlights.
+          </p>
+          <h3>Highlights</h3>
+          <ul>
+            <li>GGX/Trowbridge‑Reitz NDF with Smith GGX masking‑shadowing</li>
+            <li>Schlick Fresnel and energy‑conserving diffuse/specular split</li>
+            <li>Environment prefilter (roughness mip chain) and integrated BRDF LUT</li>
+          </ul>
+          <h3>Tech</h3>
+          <ul>
+            <li>Languages: C++ and HLSL/GLSL (adapt per target)</li>
+            <li>API: Vulkan / D3D / WebGL2 (choose your target)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Your Name. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+  </html>
+

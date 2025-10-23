@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Path Tracer — Your Name</title>
+    <meta name="description" content="Progressive path tracer with MIS, BVH acceleration, emissive lights and sky." />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://lorevoon.github.io/projects/path-tracer.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Path Tracer — Your Name" />
+    <meta property="og:description" content="Progressive path tracer with MIS, BVH acceleration, emissive lights and sky." />
+    <meta property="og:image" content="/assets/images/thumbs/rt.svg" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">Your Name</a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="/index.html#work">Work</a></li>
+            <li><a href="/index.html#skills">Skills</a></li>
+            <li><a href="/index.html#about">About</a></li>
+            <li><a href="/index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Path Tracer</h1>
+            <p class="tagline">Progressive rendering with multiple importance sampling and BVH.</p>
+            <div class="cta">
+              <a class="btn" href="/index.html#work">← Back to Work</a>
+            </div>
+          </div>
+          <div class="hero-art">
+            <img src="/assets/images/thumbs/rt.svg" alt="Path tracer thumbnail" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <h2>Overview</h2>
+          <p>
+            A simple CPU/GPU path tracer that supports diffuse/glossy materials, emissive lights, a sky model,
+            and an SAH‑built BVH for acceleration. Includes MIS for light sampling and next event estimation.
+          </p>
+          <h3>Highlights</h3>
+          <ul>
+            <li>BVH acceleration structure (SAH build)</li>
+            <li>Next event estimation with MIS</li>
+            <li>Progressive accumulation and denoise (optional)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© <span id="year"></span> Your Name. All rights reserved.</small>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js" defer></script>
+  </body>
+  </html>
+
