@@ -33,6 +33,7 @@ Skills/About sections are plain text — just edit the lists and paragraphs.
 - `assets/favicon.svg` — site icon
 - `.nojekyll` — disable Jekyll processing on GitHub Pages
 - `robots.txt`, `sitemap.xml` — basic SEO
+ - Timeline: `index.html:#timeline` markup, styles in `assets/css/styles.css` under `/* Timeline */`, behavior in `assets/js/main.js` (progress + reveal)
 
 ## GitHub Pages
 
@@ -46,6 +47,15 @@ If it doesn’t appear, check: Settings → Pages → Build and deployment → B
 - Accent gradient: `--accent` and `--accent-2`.
 - Max width and radius: `--maxw`, `--radius`.
 - Fonts: currently loads Inter from Google Fonts with system fallbacks. You can remove the `<link>` if you prefer only system fonts.
+
+### Editing the Timeline
+
+- Events live in `index.html:#timeline` as list items (`.timeline-event`).
+- For each event, update:
+  - The `when` text (dates)
+  - The title and paragraph
+  - The thumbnail image path in the inline `--thumb` style
+- Add or remove events by duplicating a `.timeline-event` block.
 
 ## Adding Real Demos
 
